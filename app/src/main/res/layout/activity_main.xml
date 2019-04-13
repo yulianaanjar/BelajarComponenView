@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+        <!--Linear Layout adalah jenis layout dimana user menempatkan 1 objek (widget) per baris/kolom.-->
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="LOGIN"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="16dp" />
+           <!--ini merupakan perintah yg terdapat pada judul di tampilan utama di buat dengan bertipe teks-->
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan Username"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="62dp" />
+            //Pada syntax diatas merupakan perintah untuk memasukkan Username, menggunakan type hint agar
+            //yaitu sebuah text yang ada di dalam EditText yang berfungsi untuk memberitahu pengguna apa
+            //yang harus diinputkan pada EditText tersebut.
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukkan Password"
+        android:inputType="numberPassword"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="129dp" />
+            <!--pada syntax diatas fungsinya sama seperti pada yang di masukkan nama-->
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="195dp" />
+            <!--pada syntax diatas digunakan untuk membuat tombol login  yang kemudian pada saat diklik-->
+            <!--akan menuju ke form berikutnya-->
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Registrasi"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="259dp" />
+                <!--pada syntax diatas juga berfungsi untuk membuat tombol registrasi tetapi belum bisa-->
+                <!--dilanjutkan ke halaman selanjutnya karena formnya belum dibuat-->
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
